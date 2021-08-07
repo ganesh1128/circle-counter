@@ -24,22 +24,22 @@ export default function App() {
     setCount([...count]);
   };
   let reset = () => {
-    count.map(obj => {
-      obj.count = 0;
-    });
+    count.map(obj => (obj.count = 0));
     setCount([...count]);
   };
 
   return (
-    <div >
-     <div className="App1">
-      <button onClick={reset} className="btn1">Reset</button></div>
-     <div className="App">
-      {count.map(obj => {
-        return <Circle data={obj} handleCount={increment} className="App" />;
-       
-      })}
-       </div>
+    <div>
+      <div className="App1">
+        <button onClick={reset} className="btn1">
+          Reset
+        </button>
+      </div>
+      <div className="App">
+        {count.map(obj => {
+          return <Circle data={obj} handleCount={increment} className="App" />;
+        })}
+      </div>
     </div>
   );
 }
