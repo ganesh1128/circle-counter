@@ -1,0 +1,26 @@
+.App {
+  display: grid;
+  text-align: center;
+  justify-content: center;
+  grid-template-columns: 200px 200px 200px;
+}
+.btn{
+  height: 60px;
+    border-radius: 50%;
+    width: 60px;
+    
+
+}
+.btn1{
+    height: 50px;
+    width: 100px;
+    margin-top: 10%;
+
+}
+.App1{
+  display: flex;
+  text-align: center;
+    justify-content: center;
+
+}
+
